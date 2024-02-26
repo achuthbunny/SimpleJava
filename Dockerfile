@@ -1,3 +1,4 @@
-FROM java:7
-
-
+FROM openjdk
+COPY App.java .
+RUN javac App.java
+CMD java App
